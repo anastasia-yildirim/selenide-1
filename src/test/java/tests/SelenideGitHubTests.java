@@ -25,6 +25,7 @@ public class SelenideGitHubTests {
             $("#wiki-tab").click();
             $("#user-content-chapters").parent().sibling(0).$$("li")
                     .filterBy(text("Soft assertions")).first().$("a").click();
+            //Assert
             $(".gh-header-title").shouldHave(text("SoftAssertions"));
     }
 }
