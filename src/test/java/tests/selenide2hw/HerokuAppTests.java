@@ -1,4 +1,4 @@
-package tests.selenide2_hw;
+package tests.selenide2hw;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -15,7 +15,7 @@ public class HerokuAppTests {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         Configuration.timeout = 5000;
     }
 
